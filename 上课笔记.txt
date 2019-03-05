@@ -1,58 +1,58 @@
 https://router.vuejs.org/
 
 
-vueÂ·ÓÉÅäÖÃ£º
+vueè·¯ç”±é…ç½®ï¼š
 
 
-	1.°²×° 
+	1.å®‰è£… 
 
 	npm install vue-router  --save   / cnpm install vue-router  --save
 
 
-	2¡¢ÒýÈë²¢ Vue.use(VueRouter)   (main.js)
+	2ã€å¼•å…¥å¹¶ Vue.use(VueRouter)   (main.js)
  
 		import VueRouter from 'vue-router'
 
 		Vue.use(VueRouter)
 
 	
-	3¡¢ÅäÖÃÂ·ÓÉ
+	3ã€é…ç½®è·¯ç”±
 
 		
 
-		1¡¢´´½¨×é¼þ ÒýÈë×é¼þ
+		1ã€åˆ›å»ºç»„ä»¶ å¼•å…¥ç»„ä»¶
 
 
-		2¡¢¶¨ÒåÂ·ÓÉ  £¨½¨Òé¸´ÖÆs£©
+		2ã€å®šä¹‰è·¯ç”±  ï¼ˆå»ºè®®å¤åˆ¶sï¼‰
 
 			const routes = [
 			  { path: '/foo', component: Foo },
 			  { path: '/bar', component: Bar },
-			  { path: '*', redirect: '/home' }   /*Ä¬ÈÏÌø×ªÂ·ÓÉ*/
+			  { path: '*', redirect: '/home' }   /*é»˜è®¤è·³è½¬è·¯ç”±*/
 			]
 
-		3¡¢ÊµÀý»¯VueRouter
+		3ã€å®žä¾‹åŒ–VueRouter
 
 			const router = new VueRouter({
-			  routes // £¨ËõÐ´£©Ïàµ±ÓÚ routes: routes
+			  routes // ï¼ˆç¼©å†™ï¼‰ç›¸å½“äºŽ routes: routes
 			})
 
-		4¡¢¹ÒÔØ
+		4ã€æŒ‚è½½
 
 				
 		new Vue({
 		  el: '#app',
-		  router£¬
+		  routerï¼Œ
 		  render: h => h(App)
 		})
 
 
 		
-		5 ¡¢¸ù×é¼þµÄÄ£°åÀïÃæ·ÅÉÏÕâ¾ä»°   <router-view></router-view>         
+		5 ã€æ ¹ç»„ä»¶çš„æ¨¡æ¿é‡Œé¢æ”¾ä¸Šè¿™å¥è¯   <router-view></router-view>         
 
 
+ 
 
-
-		6¡¢Â·ÓÉÌø×ª
+		6ã€è·¯ç”±è·³è½¬
 		<router-link to="/foo">Go to Foo</router-link>
 		 <router-link to="/bar">Go to Bar</router-link>
